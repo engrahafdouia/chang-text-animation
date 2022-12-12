@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100vh;
+    background-color: #192b3d;
+
+}
+h1{
+    color:#fff;
+    font-size: 50px;
+    /* box-shadow: 0 2px 0 rgba(0, 0, 0, .5); */
+}
+span::before{
+    content: 'developer';
+    font-size: 50px;
+ animation: animate infinite 8s;
+}
+@keyframes animate {
+    0%{    content: 'designer';}
+    25%{   content: 'frontend';}
+    50%{   content: 'UX/UI';
+    /* box-shadow: 0 0 10px 10px rgba(0, 0, 0, .5); */
+    }
+    75%{   content: 'frontend_dev';}
+    100%{  content: 'developer'; }
+    
+}
